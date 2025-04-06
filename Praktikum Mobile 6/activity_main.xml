@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBF2"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Aplikasi Input Nama"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:hint="Tuliskan Nama Anda"
+        android:paddingStart="16dp"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInput"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#80CEE4"
+        android:text="Submit"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInput"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnSubmit"
+        android:backgroundTint="#EE9393"
+        android:text="Hapus"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</RelativeLayout>
