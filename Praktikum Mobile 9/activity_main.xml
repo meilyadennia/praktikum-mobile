@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Masukkan teks"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D17089"
+        android:onClick="saveFile"
+        android:text="Simpan File" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#92A2A6"
+        android:onClick="readFile"
+        android:text="Baca File" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6777B6"
+        android:onClick="updateFile"
+        android:text="Ubah File" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED5151"
+        android:onClick="deleteFile"
+        android:text="Hapus File" />
+</LinearLayout>
